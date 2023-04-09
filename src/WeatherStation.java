@@ -32,7 +32,7 @@ public class WeatherStation {
         displays.remove(d);
     }
 
-    public void notifyDisplays() {
+    public void notifyDisplays() throws IOException {
         for(Display d : displays) {
             d.update();
         }
